@@ -1,0 +1,37 @@
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    text-align: center;
+    font-family: dongle;
+    color: aliceblue;
+}
+h1{
+    font-size: 35px;
+    background: -webkit-linear-gradient(rgb(247, 81, 253), rgb(97, 194, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: fredoka one;
+    transition: transform 1s;
+}
+h1:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    text-decoration: underline rgb(143, 202, 254) ;
+}
+#current_song{
+    font-size: 20px;
+}
+#current_song:hover{
+    text-decoration: none;
+    transform: scale(0.9);
+}
+@keyframes example{
+    from{box-shadow:1px 1px 38px rgb(255, 34, 229);}
+    to{box-shadow:1px 1px 38px rgb(60, 151, 255);}
+}
+canvas{
+    animation-name:example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
